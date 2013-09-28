@@ -1,0 +1,10 @@
+bin/
+build/
+tts-ui/war/*
+classes/
+.classpath
+.project
+.settings/
+.gradle/
+.errai/
+.gwt/
