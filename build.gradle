@@ -1,7 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'eclipse'
-apply plugin: 'jetty'
 
 repositories {
 	    mavenCentral()
@@ -40,8 +39,7 @@ task compileGwt (dependsOn: classes, type: JavaExec) {
 	'-logLevel', 'INFO',
 	'-localWorkers', '2',
 	'-compileReport',
-	'-extra', extraDir,
-	// '-draftCompile' // Speeds up compile with 25%
+	'-extra', extraDir
 	]
 	maxHeapSize = '256M'
 }
